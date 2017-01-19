@@ -48,6 +48,12 @@ if [ "$scut" = "yes" ]
 fi
 }
 
+# copying config files to home directory
+cp /etc/skel/.config/openbox/rc.xml_noscroll ~/.config/openbox/
+cp /etc/skel/.config/openbox/rc.xml_orig ~/.config/openbox/
+cp /etc/skel/.config/openbox/menu.xml_nitrogen ~/.config/openbox/
+cp /etc/skel/.config/openbox/menu.xml_pcmanfm ~/.config/openbox/
+
 main
 number
 wheel
