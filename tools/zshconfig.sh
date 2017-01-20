@@ -9,12 +9,10 @@ if [ "$ohmyzsh" = "no" ]
 then exit
 fi
 if [ "$ohmyzsh" = "yes" ]
-then (
+then 
 echo "# Installing oh-my-zsh..." 
-zenity --entry --title="$title" --text "Please enter your password." --hide-text > .passwd.txt
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh < .passwd.txt)") | zenity --progress --title="$title" --width=300 --pulsate --no-cancel --auto-close
+xfce4-terminal -e 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
 zenity --info --text "The process is complete, please exit"
-rm .passwd.txt
 fi
 exit=$(zenity --list --title= "$title" --radiolist --column "Select" --column "Options" "open zsh config file" FALSE "exit" )
 if [ "$exit" = "open zsh config file" ]
