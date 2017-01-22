@@ -11,7 +11,7 @@ fi
 if [ "$ohmyzsh" = "yes" ]
 then 
 echo "# Installing oh-my-zsh..." 
-xfce4-terminal -e 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 zenity --info --text "The process is complete, please exit"
 fi
 exit=$(zenity --list --title= "$title" --radiolist --column "Select" --column "Options" "open zsh config file" FALSE "exit" )
