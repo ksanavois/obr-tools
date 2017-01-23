@@ -8,6 +8,11 @@ fi
 if [ "$ohmyzsh" = "no" ]
 then exit
 fi
+if (pacman -Q grml-zsh-config > /dev/null)
+	then zenity rtpasswd=$(zenity --entry --title="$title" --text "Please enter your password." --hide-text)
+	echo $rtpasswd | sudo pacman -R --noconfirm grml-zsh-config
+fi
+
 if [ "$ohmyzsh" = "yes" ]
 then 
 echo "# Installing oh-my-zsh..." 
