@@ -11,7 +11,7 @@ answer=$(zenity --list --title="$title" --text "Would you like to install Flash\
 # acting on user input
 if [ "$answer" = "Yes, Please intall Flash" ]
 	then (echo "# Installing Flash..."
-	pacman -S --noconfirm flashplugin) | zenity --progress title="$title" --pulsate --auto-close
+	pacman -S --noconfirm flashplugin pepper-flash) | zenity --progress title="$title" --pulsate --auto-close
 	else exit
 fi
 
