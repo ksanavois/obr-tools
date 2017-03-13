@@ -11,7 +11,7 @@ answer=$(zenity --list --title="$title" --text "Would you like to install the mo
 # acting on user input
 if [ "$answer" = "Yes, Please intall codecs" ]
 	then (echo "# Installing Codecs..."
-	pacman -S --noconfirm a52dec autofs faac faad2 flac lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 gstreamer libdvdcss dvd+rw-tools dvdauthor dvgrab gst-plugins-base gst-plugins-good gst-plugins-ugly) | zenity --progress title="$title" --pulsate --auto-close
+	pacman -S --noconfirm a52dec autofs faac faad2 flac lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 gstreamer libdvdcss dvd+rw-tools dvdauthor dvgrab gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad gst-libav) | zenity --progress title="$title" --pulsate --auto-close
 	else exit
 fi
 
