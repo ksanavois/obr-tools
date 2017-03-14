@@ -50,7 +50,7 @@ In the next window you can delete any Wallpapers that you do not want by right\n
 clicking and selecting 'move to trash'. When you are finished simply close the\n
 window and the remaining Wallpapers will be saved into the ~/Pictures/Wallpapers folder."
 
-pcmanfm $temp_wall_dir
+xdg-open $temp_wall_dir
 
 # Send the downloaded images to the wallpaper folder 
 find . -type f -iname "*.jp*g" -exec mv {} $real_wall_dir \;
