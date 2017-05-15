@@ -315,42 +315,6 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="A-C-t">
-      <action name="Execute">
-        <command>xfce4-terminal</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>xfce4-terminal</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="Print">
-      <action name="Execute">
-        <command>scrot</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>screenshot</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="C-t">
-      <action name="Execute">
-        <command>xfce4-terminal --drop-down</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>xfce4-terminal --drop-down</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="A-h">
-      <action name="Execute">
-        <command>pcmanfm</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>pcmanfm</name>
-        </startupnotify>
-      </action>
-    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
